@@ -1,0 +1,349 @@
+2015-07-20 23:20:40,744 [63] [ERROR] - Get
+System.Data.Entity.Core.EntityException: Unable to set field/property Employees on entity type ThatConference.Data.AdventureWorks.Entities.PersonEntities. See InnerException for details. ---> System.InvalidCastException: Unable to cast object of type 'ThatConference.Data.AdventureWorks.Entities.EmployeeEntities' to type 'System.Collections.Generic.ICollection`1[ThatConference.Data.AdventureWorks.Entities.EmployeeEntities]'.
+   at lambda_method(Closure , Object , Object )
+   at System.Data.Entity.Core.Objects.Internal.EntityProxyFactory.<>c__DisplayClass8.<CreateBaseSetter>b__7(Object entity, Object value)
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs, EntitySetBase restrictTo)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ThatConference.Data.Common.RepositoryBase`4.Get(TContext ctx, TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 80
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Get[TEntity,TFilter](TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 124
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.AdventureWorksRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Get[TEntity,TFilter](TFilter )
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass1.<Get>b__0(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 748
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-20 23:20:40,744 [64] [ERROR] - Get
+System.Data.Entity.Core.EntityException: Unable to set field/property Employees on entity type ThatConference.Data.AdventureWorks.Entities.PersonEntities. See InnerException for details. ---> System.InvalidCastException: Unable to cast object of type 'ThatConference.Data.AdventureWorks.Entities.EmployeeEntities' to type 'System.Collections.Generic.ICollection`1[ThatConference.Data.AdventureWorks.Entities.EmployeeEntities]'.
+   at lambda_method(Closure , Object , Object )
+   at System.Data.Entity.Core.Objects.Internal.EntityProxyFactory.<>c__DisplayClass8.<CreateBaseSetter>b__7(Object entity, Object value)
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs, EntitySetBase restrictTo)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ThatConference.Data.Common.RepositoryBase`4.Get(TContext ctx, TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 80
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Get[TEntity,TFilter](TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 124
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.AdventureWorksRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Get[TEntity,TFilter](TFilter )
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass1.<Get>b__0(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 748
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-20 23:20:44,676 [56] [ERROR] - Get
+System.Data.Entity.Core.EntityException: Unable to set field/property Employees on entity type ThatConference.Data.AdventureWorks.Entities.PersonEntities. See InnerException for details. ---> System.InvalidCastException: Unable to cast object of type 'ThatConference.Data.AdventureWorks.Entities.EmployeeEntities' to type 'System.Collections.Generic.ICollection`1[ThatConference.Data.AdventureWorks.Entities.EmployeeEntities]'.
+   at lambda_method(Closure , Object , Object )
+   at System.Data.Entity.Core.Objects.Internal.EntityProxyFactory.<>c__DisplayClass8.<CreateBaseSetter>b__7(Object entity, Object value)
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs, EntitySetBase restrictTo)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ThatConference.Data.Common.RepositoryBase`4.Get(TContext ctx, TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 80
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Get[TEntity,TFilter](TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 124
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.AdventureWorksRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Get[TEntity,TFilter](TFilter )
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass1.<Get>b__0(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 748
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-20 23:21:26,228 [59] [ERROR] - Get
+System.Data.Entity.Core.EntityException: Unable to set field/property Employees on entity type ThatConference.Data.AdventureWorks.Entities.PersonEntities. See InnerException for details. ---> System.InvalidCastException: Unable to cast object of type 'ThatConference.Data.AdventureWorks.Entities.EmployeeEntities' to type 'System.Collections.Generic.ICollection`1[ThatConference.Data.AdventureWorks.Entities.EmployeeEntities]'.
+   at lambda_method(Closure , Object , Object )
+   at System.Data.Entity.Core.Objects.Internal.EntityProxyFactory.<>c__DisplayClass8.<CreateBaseSetter>b__7(Object entity, Object value)
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs, EntitySetBase restrictTo)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ThatConference.Data.Common.RepositoryBase`4.Get(TContext ctx, TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 80
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Get[TEntity,TFilter](TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 124
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.AdventureWorksRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Get[TEntity,TFilter](TFilter )
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass1.<Get>b__0(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 748
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-20 23:21:35,370 [31] [ERROR] - Get
+System.Data.Entity.Core.EntityException: Unable to set field/property Employees on entity type ThatConference.Data.AdventureWorks.Entities.PersonEntities. See InnerException for details. ---> System.InvalidCastException: Unable to cast object of type 'ThatConference.Data.AdventureWorks.Entities.EmployeeEntities' to type 'System.Collections.Generic.ICollection`1[ThatConference.Data.AdventureWorks.Entities.EmployeeEntities]'.
+   at lambda_method(Closure , Object , Object )
+   at System.Data.Entity.Core.Objects.Internal.EntityProxyFactory.<>c__DisplayClass8.<CreateBaseSetter>b__7(Object entity, Object value)
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs, EntitySetBase restrictTo)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ThatConference.Data.Common.RepositoryBase`4.Get(TContext ctx, TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 80
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Get[TEntity,TFilter](TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 124
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.AdventureWorksRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Get[TEntity,TFilter](TFilter )
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass1.<Get>b__0(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 748
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-20 23:21:38,550 [56] [ERROR] - Get
+System.Data.Entity.Core.EntityException: Unable to set field/property Employees on entity type ThatConference.Data.AdventureWorks.Entities.PersonEntities. See InnerException for details. ---> System.InvalidCastException: Unable to cast object of type 'ThatConference.Data.AdventureWorks.Entities.EmployeeEntities' to type 'System.Collections.Generic.ICollection`1[ThatConference.Data.AdventureWorks.Entities.EmployeeEntities]'.
+   at lambda_method(Closure , Object , Object )
+   at System.Data.Entity.Core.Objects.Internal.EntityProxyFactory.<>c__DisplayClass8.<CreateBaseSetter>b__7(Object entity, Object value)
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs, EntitySetBase restrictTo)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ThatConference.Data.Common.RepositoryBase`4.Get(TContext ctx, TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 80
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Get[TEntity,TFilter](TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 124
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.AdventureWorksRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Get[TEntity,TFilter](TFilter )
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass1.<Get>b__0(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 748
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-20 23:23:06,563 [6] [ERROR] - Get
+System.Data.Entity.Core.EntityException: Unable to set field/property Employees on entity type ThatConference.Data.AdventureWorks.Entities.PersonEntities. See InnerException for details. ---> System.InvalidCastException: Unable to cast object of type 'ThatConference.Data.AdventureWorks.Entities.EmployeeEntities' to type 'System.Collections.Generic.ICollection`1[ThatConference.Data.AdventureWorks.Entities.EmployeeEntities]'.
+   at lambda_method(Closure , Object , Object )
+   at System.Data.Entity.Core.Objects.Internal.EntityProxyFactory.<>c__DisplayClass8.<CreateBaseSetter>b__7(Object entity, Object value)
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs, EntitySetBase restrictTo)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ThatConference.Data.Common.RepositoryBase`4.Get(TContext ctx, TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 80
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Get[TEntity,TFilter](TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 124
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.AdventureWorksRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Get[TEntity,TFilter](TFilter )
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass1.<Get>b__0(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 748
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-20 23:24:56,482 [31] [ERROR] - Get
+System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.Data.Entity.Core.MetadataException: The declared type of navigation property CodeFirstNamespace.PersonEntities.Employees is not compatible with the result of the specified navigation. 
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.ValidateNavPropertyOp(PropertyOp op)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.VisitNavPropertyOp(PropertyOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Visit(PropertyOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfNode.VisitDefault(Node n)
+   at System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfNode.VisitAncillaryOpDefault(AncillaryOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.Visit(UnnestOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitRelOpDefault(RelOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Visit(ProjectOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitRelOpDefault(RelOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.VisitApplyOp(ApplyBaseOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitRelOpDefault(RelOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Visit(ProjectOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitRelOpDefault(RelOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Visit(ProjectOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfNode.VisitDefault(Node n)
+   at System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfNode.VisitPhysicalOpDefault(PhysicalOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Process(Dictionary`2& tvfResultKeys)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Process(PlanCompiler planCompilerState, StructuredTypeInfo& typeInfo, Dictionary`2& tvfResultKeys)
+   at System.Data.Entity.Core.Query.PlanCompiler.PlanCompiler.Compile(List`1& providerCommands, ColumnMap& resultColumnMap, Int32& columnCount, Set`1& entitySets)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityProviderServices.CreateDbCommandDefinition(DbProviderManifest providerManifest, DbCommandTree commandTree, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlanFactory.CreateCommandDefinition(ObjectContext context, DbQueryCommandTree tree)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlanFactory.Prepare(ObjectContext context, DbQueryCommandTree tree, Type elementType, MergeOption mergeOption, Boolean streaming, Span span, IEnumerable`1 compiledQueryParameters, AliasGenerator aliasGenerator)
+   at System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ThatConference.Data.Common.RepositoryBase`4.StoreData[T](IQueryable`1 query) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 290
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.PersonRepository.ApplyGetIncludes(IAdventureWorksContext ctx, IQueryable`1 query, PersonFilter filter) in c:\thatConference\WebApi\AdventureWorks\Data\Repositories\AdventureWorks\PersonRepository.cs:line 81
+   at ThatConference.Data.Common.RepositoryBase`4.GetFullQuery(TContext ctx, TFilter filter, Boolean isForGetCount) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 142
+   at ThatConference.Data.Common.RepositoryBase`4.Get(TContext ctx, TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 79
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Get[TEntity,TFilter](TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 124
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.AdventureWorksRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Get[TEntity,TFilter](TFilter )
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass1.<Get>b__0(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 748
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-20 23:25:24,743 [55] [ERROR] - Get
+System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.Data.Entity.Core.MetadataException: The declared type of navigation property CodeFirstNamespace.PersonEntities.Employees is not compatible with the result of the specified navigation. 
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.ValidateNavPropertyOp(PropertyOp op)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.VisitNavPropertyOp(PropertyOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Visit(PropertyOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfNode.VisitDefault(Node n)
+   at System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfNode.VisitAncillaryOpDefault(AncillaryOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.Visit(UnnestOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitRelOpDefault(RelOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Visit(ProjectOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitRelOpDefault(RelOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.VisitApplyOp(ApplyBaseOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitRelOpDefault(RelOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Visit(ProjectOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitRelOpDefault(RelOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Visit(ProjectOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   at System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfNode.VisitDefault(Node n)
+   at System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfNode.VisitPhysicalOpDefault(PhysicalOp op, Node n)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Process(Dictionary`2& tvfResultKeys)
+   at System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Process(PlanCompiler planCompilerState, StructuredTypeInfo& typeInfo, Dictionary`2& tvfResultKeys)
+   at System.Data.Entity.Core.Query.PlanCompiler.PlanCompiler.Compile(List`1& providerCommands, ColumnMap& resultColumnMap, Int32& columnCount, Set`1& entitySets)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityProviderServices.CreateDbCommandDefinition(DbProviderManifest providerManifest, DbCommandTree commandTree, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlanFactory.CreateCommandDefinition(ObjectContext context, DbQueryCommandTree tree)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlanFactory.Prepare(ObjectContext context, DbQueryCommandTree tree, Type elementType, MergeOption mergeOption, Boolean streaming, Span span, IEnumerable`1 compiledQueryParameters, AliasGenerator aliasGenerator)
+   at System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ThatConference.Data.Common.RepositoryBase`4.StoreData[T](IQueryable`1 query) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 290
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.PersonRepository.ApplyGetIncludes(IAdventureWorksContext ctx, IQueryable`1 query, PersonFilter filter) in c:\thatConference\WebApi\AdventureWorks\Data\Repositories\AdventureWorks\PersonRepository.cs:line 81
+   at ThatConference.Data.Common.RepositoryBase`4.GetFullQuery(TContext ctx, TFilter filter, Boolean isForGetCount) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 142
+   at ThatConference.Data.Common.RepositoryBase`4.Get(TContext ctx, TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 79
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Get[TEntity,TFilter](TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 124
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.AdventureWorksRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Get[TEntity,TFilter](TFilter )
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass1.<Get>b__0(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 748
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-20 23:27:38,795 [49] [ERROR] - 
+System.AggregateException: One or more errors occurred. ---> System.InvalidOperationException: Unable to determine the principal end of an association between the types 'ThatConference.Data.AdventureWorks.Entities.EmployeeEntities' and 'ThatConference.Data.AdventureWorks.Entities.PersonEntities'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+   at System.Data.Entity.ModelConfiguration.Edm.Services.AssociationTypeMappingGenerator.GenerateIndependentAssociationType(AssociationType associationType, DbDatabaseMapping databaseMapping)
+   at System.Data.Entity.ModelConfiguration.Edm.Services.DatabaseMappingGenerator.GenerateAssociationTypes(DbDatabaseMapping databaseMapping)
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at ThatConference.Data.Common.GenericDbContext.GetCompiledModel(DbCompiledModel& modelCache, Object& lockObj, Action`1 buildModelMappingCallback, String providerName, String version) in c:\thatConference\WebApi\Data\Common\GenericDbContext.cs:line 102
+   at ThatConference.Data.AdventureWorks.AdventureWorksContext.CompileModel() in c:\thatConference\WebApi\Data\AdventureWorks\AdventureWorksContext.cs:line 26
+   at ThatConference.AdventureWorks.Data.Repositories.DatabaseInitialize.Initalize() in c:\thatConference\WebApi\AdventureWorks\Data\Repositories\DatabaseInitialize.cs:line 21
+   at ThatConference.AdventureWorks.Services.DatabaseService.Initialize() in c:\thatConference\WebApi\AdventureWorks\Services\DatabaseService.cs:line 46
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.InvalidOperationException: Unable to determine the principal end of an association between the types 'ThatConference.Data.AdventureWorks.Entities.EmployeeEntities' and 'ThatConference.Data.AdventureWorks.Entities.PersonEntities'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+   at System.Data.Entity.ModelConfiguration.Edm.Services.AssociationTypeMappingGenerator.GenerateIndependentAssociationType(AssociationType associationType, DbDatabaseMapping databaseMapping)
+   at System.Data.Entity.ModelConfiguration.Edm.Services.DatabaseMappingGenerator.GenerateAssociationTypes(DbDatabaseMapping databaseMapping)
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at ThatConference.Data.Common.GenericDbContext.GetCompiledModel(DbCompiledModel& modelCache, Object& lockObj, Action`1 buildModelMappingCallback, String providerName, String version) in c:\thatConference\WebApi\Data\Common\GenericDbContext.cs:line 102
+   at ThatConference.Data.AdventureWorks.AdventureWorksContext.CompileModel() in c:\thatConference\WebApi\Data\AdventureWorks\AdventureWorksContext.cs:line 26
+   at ThatConference.AdventureWorks.Data.Repositories.DatabaseInitialize.Initalize() in c:\thatConference\WebApi\AdventureWorks\Data\Repositories\DatabaseInitialize.cs:line 21
+   at ThatConference.AdventureWorks.Services.DatabaseService.Initialize() in c:\thatConference\WebApi\AdventureWorks\Services\DatabaseService.cs:line 46
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-07-20 23:27:38,935 [51] [ERROR] - Get
+System.InvalidOperationException: Unable to determine the principal end of an association between the types 'ThatConference.Data.AdventureWorks.Entities.EmployeeEntities' and 'ThatConference.Data.AdventureWorks.Entities.PersonEntities'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+   at System.Data.Entity.ModelConfiguration.Edm.Services.AssociationTypeMappingGenerator.GenerateIndependentAssociationType(AssociationType associationType, DbDatabaseMapping databaseMapping)
+   at System.Data.Entity.ModelConfiguration.Edm.Services.DatabaseMappingGenerator.GenerateAssociationTypes(DbDatabaseMapping databaseMapping)
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at ThatConference.Data.Common.GenericDbContext.GetCompiledModel(DbCompiledModel& modelCache, Object& lockObj, Action`1 buildModelMappingCallback, String providerName, String version) in c:\thatConference\WebApi\Data\Common\GenericDbContext.cs:line 102
+   at ThatConference.Data.AdventureWorks.AdventureWorksContext..ctor(String connStringName) in c:\thatConference\WebApi\Data\AdventureWorks\AdventureWorksContext.cs:line 383
+   at ThatConference.AdventureWorks.Data.Repositories.Factories.AdventureWorksContextFactory.Create() in c:\thatConference\WebApi\AdventureWorks\Data\Repositories\Factories\AdventureWorksContextFactory.cs:line 26
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Get[TEntity,TFilter](TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 121
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.AdventureWorksRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Get[TEntity,TFilter](TFilter )
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass1.<Get>b__0(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 748
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-20 23:32:36,938 [62] [ERROR] - Get
+System.Data.Entity.Core.EntityException: Unable to set field/property Employees on entity type ThatConference.Data.AdventureWorks.Entities.PersonEntities. See InnerException for details. ---> System.InvalidCastException: Unable to cast object of type 'ThatConference.Data.AdventureWorks.Entities.EmployeeEntities' to type 'System.Collections.Generic.ICollection`1[ThatConference.Data.AdventureWorks.Entities.EmployeeEntities]'.
+   at lambda_method(Closure , Object , Object )
+   at System.Data.Entity.Core.Objects.Internal.EntityProxyFactory.<>c__DisplayClass8.<CreateBaseSetter>b__7(Object entity, Object value)
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Objects.Internal.PocoPropertyAccessorStrategy.SetNavigationPropertyValue(RelatedEnd relatedEnd, Object value)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.set_ReferenceValue(IEntityWrapper value)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference.SetEntityKey(EntityKey value, Boolean forceFixup)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupEntityReferenceToPrincipal(EntityReference relatedEnd, EntityKey foreignKey, Boolean setIsLoaded, Boolean replaceExistingRef)
+   at System.Data.Entity.Core.Objects.EntityEntry.FixupReferencesByForeignKeys(Boolean replaceAddedRefs, EntitySetBase restrictTo)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.FixupReferencesByForeignKeys(EntityEntry newEntry, Boolean replaceAddedRefs)
+   at System.Data.Entity.Core.Objects.ObjectStateManager.AddEntry(IEntityWrapper wrappedObject, EntityKey passedKey, EntitySet entitySet, String argumentName, Boolean isAdded)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ThatConference.Data.Common.RepositoryBase`4.Get(TContext ctx, TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryBase.cs:line 80
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Get[TEntity,TFilter](TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 124
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.AdventureWorksRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Get[TEntity,TFilter](TFilter )
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass1.<Get>b__0(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 748
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-20 23:50:58,031 [97] [ERROR] - Get
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: No overload for method 'Get' takes '1' arguments
+   at CallSite.Target(Closure , CallSite , Object , EmployeesFilter )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Get[TEntity,TFilter](TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 120
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Get[TEntity,TFilter](TFilter )
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass1.<Get>b__0(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 748
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100

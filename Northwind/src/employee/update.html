@@ -1,0 +1,71 @@
+<template>
+    <section class="au-animate">
+        <h2>${heading} ${fullName}</h2>
+
+		<div class="form-group">
+			<div class="row">
+				<div class="col-md-3">
+					<label for="txtFirstName">First Name</label>
+					<input type="text" value.bind="employee.firstName" class="form-control" id="txtFirstName" placeholder="First Name">
+				</div>
+				<div class="col-md-3">
+					<label for="txtLastName">Last Name</label>
+					<input type="text" value.bind="employee.lastName" class="form-control" id="txtLastName" placeholder="Last Name">
+				</div>
+				<div class="col-md-2">
+					<label for="dtpBirthDate">Birth Date</label>
+					<datepicker value.two-way="employee.birthDate" id="dtpBirthDate"></datepicker>
+				</div>
+				<div class="col-md-2">
+					<label for="dtpBirthDate">Hire Date</label>
+					<datepicker enabled="false" value.two-way="employee.hireDate" id="dtpBirthDate"></datepicker>
+				</div>
+			</div>
+		</div>
+        
+		<div class="form-group">
+			<div class="row">
+				<div class="col-md-6">
+					<label for="txtAddress">Address</label>
+					<input type="text" value.bind="employee.address" class="form-control" id="txtAddress" placeholder="Address">
+				</div>
+			</div>
+        </div>
+        <div class="form-group">
+			<div class="row">
+				<div class="col-md-3">
+					<label for="txtCity">City</label>
+					<input type="text" value.bind="employee.city" class="form-control" id="txtCity" placeholder="City">
+				</div>
+				<div class="col-md-3">
+					<label for="txtRegion">Region/State</label>
+					<input type="text" value.bind="employee.region" class="form-control" id="txtRegion" placeholder="Region/State">
+				</div>
+				<div class="col-md-2">
+					<label for="txtPostalCode">Postal Code</label>
+					<input type="text" value.bind="employee.postalCode" class="form-control" id="txtPostalCode" placeholder="Postal Code">
+				</div>
+				<div class="col-md-2">
+					<label for="txtCountry">Country</label>
+					<input type="text" value.bind="employee.country" class="form-control" id="txtCountry" placeholder="Country">
+				</div>
+			</div>
+        </div>
+		
+		<br/>
+        <div>
+            <button type="submit" click.delegate="save()" class="btn btn-default">Update</button> 
+            <button type="submit" click.delegate="cancel()" class="btn btn-warning">Cancel</button>
+        </div>
+    </section>
+    
+    <modal showing.bind="showingCancelDialog">
+        <modal-header title="Confirm Cancel" close.call="closeCancelModal()"></modal-header>
+        <modal-body>Are you sure you want to discard your changes?</modal-body>
+        <modal-footer>
+            <button class="btn" click.delegate="goBack()">Yes</button>
+            <au-button text="No" click.call="closeCancelModal()"></au-button>
+        </modal-footer>
+    </modal>
+</template>
+

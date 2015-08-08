@@ -1,0 +1,51 @@
+<template>
+    <section class="au-animate">
+        <h2>${heading}</h2>
+		
+        <div><button click.delegate="create()" class="btn btn-success">Create</button></div>
+        <br />
+		<div>
+            <table class='table table-bordered table-striped table-hover'>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Birth Date</th>
+						<th>Hire Date</th>
+						<th>Address</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr repeat.for="employee of employees" class="${employee.isSelected ? 'yellow' : ''}" click.delegate="$parent.select(employee, $event)">
+                        <td>${employee.firstName}</td>
+                        <td>${employee.lastName}</td>
+                        <td>${employee.birthDate}</td>
+                        <td>${employee.hireDate}</td>
+                        <td>
+                            ${employee.address}<br />
+                            ${employee.city} ${employee.region}  ${employee.postalCode}<br />
+                            ${employee.country}
+                        </td>
+                        <td>
+                            <div class="actions">
+                                <a route-href="route: employee-edit; params.bind: { id: employee.employeeID }"><i class="fa fa-edit fa-lg" title="Edit"></i></a>
+                                <span title="Delete" click.delegate="$parent.removeConfirm(employee)" class="fa fa-remove fa-lg" style="color: red"></span>
+                            </div>
+                        </td>
+                    </tr>			
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <modal showing.bind="showingDeleteDialog">
+        <modal-header title="Confirm Delete" close.call="closeDeleteModal()"></modal-header>
+        <modal-body>Are you sure you want to delete ${deleteFullName}?</modal-body>
+        <modal-footer>
+            <button class="btn" click.delegate="deleteEmployeeConfirmed()">Yes</button>
+            <au-button text="No" click.call="closeDeleteModal()"></au-button>
+        </modal-footer>
+    </modal>
+</template>
+

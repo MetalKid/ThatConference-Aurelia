@@ -1,0 +1,61 @@
+2015-07-19 14:49:50,808 [5] [ERROR] - 
+System.AggregateException: One or more errors occurred. ---> System.ArgumentException: The item with identity 'SpecialOfferID' already exists in the metadata collection.
+Parameter name: item
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCollection`1.AddInternal(T item)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCollection`1..ctor(IEnumerable`1 items)
+   at System.Data.Entity.Core.Metadata.Edm.ReferentialConstraint..ctor(RelationshipEndMember fromRole, RelationshipEndMember toRole, IEnumerable`1 fromProperties, IEnumerable`1 toProperties)
+   at System.Data.Entity.ModelConfiguration.Conventions.ForeignKeyNavigationPropertyAttributeConvention.Apply(NavigationProperty item, DbModel model)
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ModelConventionDispatcher.Dispatch[T](T item)
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ModelConventionDispatcher.VisitEdmNavigationProperty(NavigationProperty item)
+   at System.Data.Entity.Edm.EdmModelVisitor.VisitCollection[T](IEnumerable`1 collection, Action`1 visitMethod)
+   at System.Data.Entity.Edm.EdmModelVisitor.VisitDeclaredNavigationProperties(EntityType entityType, IEnumerable`1 navigationProperties)
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ModelConventionDispatcher.VisitEdmEntityType(EntityType item)
+   at System.Data.Entity.Edm.EdmModelVisitor.VisitCollection[T](IEnumerable`1 collection, Action`1 visitMethod)
+   at System.Data.Entity.Edm.EdmModelVisitor.VisitEntityTypes(IEnumerable`1 entityTypes)
+   at System.Data.Entity.Edm.EdmModelVisitor.VisitEdmModel(EdmModel item)
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ModelConventionDispatcher.VisitEdmModel(EdmModel item)
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ModelConventionDispatcher.Dispatch()
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ApplyConceptualModel(DbModel model)
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderInfo providerInfo)
+   at ThatConference.Data.Common.GenericDbContext.GetCompiledModel(DbCompiledModel& modelCache, Object& lockObj, Action`1 buildModelMappingCallback, String providerName, String version) in c:\thatConference\WebApi\Data\Common\GenericDbContext.cs:line 102
+   at ThatConference.Data.AdventureWorks.AdventureWorksContext.CompileModel() in c:\thatConference\WebApi\Data\AdventureWorks\AdventureWorksContext.cs:line 26
+   at ThatConference.AdventureWorks.Data.Repositories.DatabaseInitialize.Initalize() in c:\thatConference\WebApi\AdventureWorks\Data\Repositories\DatabaseInitialize.cs:line 21
+   at ThatConference.AdventureWorks.Services.DatabaseService.Initialize() in c:\thatConference\WebApi\AdventureWorks\Services\DatabaseService.cs:line 46
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.ArgumentException: The item with identity 'SpecialOfferID' already exists in the metadata collection.
+Parameter name: item
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCollection`1.AddInternal(T item)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCollection`1..ctor(IEnumerable`1 items)
+   at System.Data.Entity.Core.Metadata.Edm.ReferentialConstraint..ctor(RelationshipEndMember fromRole, RelationshipEndMember toRole, IEnumerable`1 fromProperties, IEnumerable`1 toProperties)
+   at System.Data.Entity.ModelConfiguration.Conventions.ForeignKeyNavigationPropertyAttributeConvention.Apply(NavigationProperty item, DbModel model)
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ModelConventionDispatcher.Dispatch[T](T item)
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ModelConventionDispatcher.VisitEdmNavigationProperty(NavigationProperty item)
+   at System.Data.Entity.Edm.EdmModelVisitor.VisitCollection[T](IEnumerable`1 collection, Action`1 visitMethod)
+   at System.Data.Entity.Edm.EdmModelVisitor.VisitDeclaredNavigationProperties(EntityType entityType, IEnumerable`1 navigationProperties)
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ModelConventionDispatcher.VisitEdmEntityType(EntityType item)
+   at System.Data.Entity.Edm.EdmModelVisitor.VisitCollection[T](IEnumerable`1 collection, Action`1 visitMethod)
+   at System.Data.Entity.Edm.EdmModelVisitor.VisitEntityTypes(IEnumerable`1 entityTypes)
+   at System.Data.Entity.Edm.EdmModelVisitor.VisitEdmModel(EdmModel item)
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ModelConventionDispatcher.VisitEdmModel(EdmModel item)
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ModelConventionDispatcher.Dispatch()
+   at System.Data.Entity.ModelConfiguration.Configuration.ConventionsConfiguration.ApplyConceptualModel(DbModel model)
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderInfo providerInfo)
+   at ThatConference.Data.Common.GenericDbContext.GetCompiledModel(DbCompiledModel& modelCache, Object& lockObj, Action`1 buildModelMappingCallback, String providerName, String version) in c:\thatConference\WebApi\Data\Common\GenericDbContext.cs:line 102
+   at ThatConference.Data.AdventureWorks.AdventureWorksContext.CompileModel() in c:\thatConference\WebApi\Data\AdventureWorks\AdventureWorksContext.cs:line 26
+   at ThatConference.AdventureWorks.Data.Repositories.DatabaseInitialize.Initalize() in c:\thatConference\WebApi\AdventureWorks\Data\Repositories\DatabaseInitialize.cs:line 21
+   at ThatConference.AdventureWorks.Services.DatabaseService.Initialize() in c:\thatConference\WebApi\AdventureWorks\Services\DatabaseService.cs:line 46
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2015-07-19 16:46:45,143 [7] [ERROR] - Get
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: No overload for method 'Get' takes '1' arguments
+   at CallSite.Target(Closure , CallSite , Object , CurrencyFilter )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Get[TEntity,TFilter](TFilter filter) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 119
+   at ThatConference.AdventureWorks.Data.Repositories.AdventureWorks.AdventureWorksRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Get[TEntity,TFilter](TFilter )
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass1.<Get>b__0(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 748
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61989682-9DAF-4A55-BEAD-218E2B9E1715}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThatConference.Northwind.Interfaces.Services</RootNamespace>
+    <AssemblyName>ThatConference.Northwind.Interfaces.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\ThatConference.Northwind.Interfaces.Services.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Release\ThatConference.Northwind.Interfaces.Services.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassyMapper, Version=1.2.2.0, Culture=neutral, PublicKeyToken=058834aab058eec9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\ClassyMapper.1.2.2\lib\net451\ClassyMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="QueryFilter, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\QueryFilter.1.0.4\lib\net451\QueryFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\ThatConference.Common.csproj">
+      <Project>{3B917669-E1F7-4165-841D-9F2FF58BBD3A}</Project>
+      <Name>ThatConference.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Data\Common\ThatConference.Data.Common.csproj">
+      <Project>{59BE467E-FF7F-4656-869E-940542EA6271}</Project>
+      <Name>ThatConference.Data.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\Common\ThatConference.Services.Common.csproj">
+      <Project>{2E7033B1-9312-48FD-8952-0B813024BE30}</Project>
+      <Name>ThatConference.Services.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\ThatConference.Northwind.Common.csproj">
+      <Project>{A1EEE9CA-5C74-47FA-ABE3-2219A5578496}</Project>
+      <Name>ThatConference.Northwind.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="IDatabaseService.cs" />
+    <Compile Include="IScopeService.cs" />
+    <Content Include="packages.config" />
+    <Compile Include="Northwind\ICategoriesService.cs" />
+    <Compile Include="Northwind\ICustomerCustomerDemoService.cs" />
+    <Compile Include="Northwind\ICustomerDemographicsService.cs" />
+    <Compile Include="Northwind\ICustomersService.cs" />
+    <Compile Include="Northwind\IEmployeesService.cs" />
+    <Compile Include="Northwind\IEmployeeTerritoriesService.cs" />
+    <Compile Include="Northwind\IOrderDetailsService.cs" />
+    <Compile Include="Northwind\IOrdersService.cs" />
+    <Compile Include="Northwind\IProductsService.cs" />
+    <Compile Include="Northwind\IRegionService.cs" />
+    <Compile Include="Northwind\IShippersService.cs" />
+    <Compile Include="Northwind\ISuppliersService.cs" />
+    <Compile Include="Northwind\IsysdiagramsService.cs" />
+    <Compile Include="Northwind\ITerritoriesService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+</Project>

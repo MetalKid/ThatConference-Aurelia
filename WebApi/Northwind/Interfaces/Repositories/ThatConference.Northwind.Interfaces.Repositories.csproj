@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71CAF619-7E36-4F08-86DF-64A36F66FEB5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThatConference.Northwind.Interfaces.Repositories</RootNamespace>
+    <AssemblyName>ThatConference.Northwind.Interfaces.Repositories</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\ThatConference.Northwind.Interfaces.Repositories.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Release\ThatConference.Northwind.Interfaces.Repositories.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="QueryFilter, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\QueryFilter.1.0.4\lib\net451\QueryFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\ThatConference.Common.csproj">
+      <Project>{3B917669-E1F7-4165-841D-9F2FF58BBD3A}</Project>
+      <Name>ThatConference.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Data\Northwind.Entities\ThatConference.Data.Northwind.Entities.csproj">
+      <Project>{A9E50A98-E4C7-4691-84A6-AA37554302EC}</Project>
+      <Name>ThatConference.Data.Northwind.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Data\Common\ThatConference.Data.Common.csproj">
+      <Project>{59BE467E-FF7F-4656-869E-940542EA6271}</Project>
+      <Name>ThatConference.Data.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\ThatConference.Northwind.Common.csproj">
+      <Project>{A1EEE9CA-5C74-47FA-ABE3-2219A5578496}</Project>
+      <Name>ThatConference.Northwind.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="IDatabaseInitialize.cs" />
+    <Compile Include="Northwind\ICategoriesRepository.cs" />
+    <Compile Include="Northwind\ICustomerCustomerDemoRepository.cs" />
+    <Compile Include="Northwind\ICustomerDemographicsRepository.cs" />
+    <Compile Include="Northwind\ICustomersRepository.cs" />
+    <Compile Include="Northwind\IEmployeesRepository.cs" />
+    <Compile Include="Northwind\IEmployeeTerritoriesRepository.cs" />
+    <Compile Include="Northwind\INorthwindRepositoryManager.cs" />
+    <Compile Include="Northwind\IOrderDetailsRepository.cs" />
+    <Compile Include="Northwind\IOrdersRepository.cs" />
+    <Compile Include="Northwind\IProductsRepository.cs" />
+    <Compile Include="Northwind\IRegionRepository.cs" />
+    <Compile Include="Northwind\IShippersRepository.cs" />
+    <Compile Include="Northwind\ISuppliersRepository.cs" />
+    <Compile Include="Northwind\IsysdiagramsRepository.cs" />
+    <Compile Include="Northwind\ITerritoriesRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1EEE9CA-5C74-47FA-ABE3-2219A5578496}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThatConference.Northwind.Common</RootNamespace>
+    <AssemblyName>ThatConference.Northwind.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\ThatConference.Northwind.Common.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Release\ThatConference.Northwind.Common.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassyMapper, Version=1.2.2.0, Culture=neutral, PublicKeyToken=058834aab058eec9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\ClassyMapper.1.2.2\lib\net451\ClassyMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="QueryFilter, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\QueryFilter.1.0.4\lib\net451\QueryFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\ThatConference.Common.csproj">
+      <Project>{3B917669-E1F7-4165-841D-9F2FF58BBD3A}</Project>
+      <Name>ThatConference.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="NorthwindScope.cs" />
+    <Compile Include="NorthwindScopeKey.cs" />
+    <Content Include="packages.config" />
+    <Compile Include="DataTransferObjects\Northwind\CategoriesDto.cs" />
+    <Compile Include="DataTransferObjects\Northwind\CustomerCustomerDemoDto.cs" />
+    <Compile Include="DataTransferObjects\Northwind\CustomerDemographicsDto.cs" />
+    <Compile Include="DataTransferObjects\Northwind\CustomersDto.cs" />
+    <Compile Include="DataTransferObjects\Northwind\EmployeesDto.cs" />
+    <Compile Include="DataTransferObjects\Northwind\EmployeeTerritoriesDto.cs" />
+    <Compile Include="DataTransferObjects\Northwind\OrderDetailsDto.cs" />
+    <Compile Include="DataTransferObjects\Northwind\OrdersDto.cs" />
+    <Compile Include="DataTransferObjects\Northwind\ProductsDto.cs" />
+    <Compile Include="DataTransferObjects\Northwind\RegionDto.cs" />
+    <Compile Include="DataTransferObjects\Northwind\ShippersDto.cs" />
+    <Compile Include="DataTransferObjects\Northwind\SuppliersDto.cs" />
+    <Compile Include="DataTransferObjects\Northwind\sysdiagramsDto.cs" />
+    <Compile Include="DataTransferObjects\Northwind\TerritoriesDto.cs" />
+    <Compile Include="Filters\Northwind\CategoriesFilter.cs" />
+    <Compile Include="Filters\Northwind\CustomerCustomerDemoFilter.cs" />
+    <Compile Include="Filters\Northwind\CustomerDemographicsFilter.cs" />
+    <Compile Include="Filters\Northwind\CustomersFilter.cs" />
+    <Compile Include="Filters\Northwind\EmployeesFilter.cs" />
+    <Compile Include="Filters\Northwind\EmployeeTerritoriesFilter.cs" />
+    <Compile Include="Filters\Northwind\OrderDetailsFilter.cs" />
+    <Compile Include="Filters\Northwind\OrdersFilter.cs" />
+    <Compile Include="Filters\Northwind\ProductsFilter.cs" />
+    <Compile Include="Filters\Northwind\RegionFilter.cs" />
+    <Compile Include="Filters\Northwind\ShippersFilter.cs" />
+    <Compile Include="Filters\Northwind\SuppliersFilter.cs" />
+    <Compile Include="Filters\Northwind\sysdiagramsFilter.cs" />
+    <Compile Include="Filters\Northwind\TerritoriesFilter.cs" />
+    <Compile Include="Interfaces\INorthwindScope.cs" />
+    <Compile Include="Interfaces\INorthwindScopeKey.cs" />
+    <Compile Include="Interfaces\INorthwindScopePublic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+</Project>

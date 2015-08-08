@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0CCD499-E71D-4029-9444-72408DE8714C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThatConference.Northwind.Services</RootNamespace>
+    <AssemblyName>ThatConference.Northwind.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\ThatConference.Northwind.Services.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Release\ThatConference.Northwind.Services.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassyMapper, Version=1.2.2.0, Culture=neutral, PublicKeyToken=058834aab058eec9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\ClassyMapper.1.2.2\lib\net451\ClassyMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="LightInject, Version=3.0.2.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\LightInject.3.0.2.7\lib\net45\LightInject.dll</HintPath>
+    </Reference>
+    <Reference Include="QueryFilter, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\QueryFilter.1.0.4\lib\net451\QueryFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\ThatConference.Common.csproj">
+      <Project>{3B917669-E1F7-4165-841D-9F2FF58BBD3A}</Project>
+      <Name>ThatConference.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\Northwind.Entities\ThatConference.Data.Northwind.Entities.csproj">
+      <Project>{A9E50A98-E4C7-4691-84A6-AA37554302EC}</Project>
+      <Name>ThatConference.Data.Northwind.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\Common\ThatConference.Data.Common.csproj">
+      <Project>{59BE467E-FF7F-4656-869E-940542EA6271}</Project>
+      <Name>ThatConference.Data.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Common\ThatConference.Services.Common.csproj">
+      <Project>{2E7033B1-9312-48FD-8952-0B813024BE30}</Project>
+      <Name>ThatConference.Services.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\ThatConference.Northwind.Common.csproj">
+      <Project>{A1EEE9CA-5C74-47FA-ABE3-2219A5578496}</Project>
+      <Name>ThatConference.Northwind.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Repositories\ThatConference.Northwind.Interfaces.Repositories.csproj">
+      <Project>{71CAF619-7E36-4F08-86DF-64A36F66FEB5}</Project>
+      <Name>ThatConference.Northwind.Interfaces.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Services\ThatConference.Northwind.Interfaces.Services.csproj">
+      <Project>{9DF31F4E-179B-4A64-A1B3-8EEAE4274B5F}</Project>
+      <Name>ThatConference.Northwind.Interfaces.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="DatabaseService.cs" />
+    <Content Include="packages.config" />
+    <Compile Include="ScopeService.cs" />
+    <Compile Include="BusinessRules\Northwind\CategoriesBusinessRules.cs" />
+    <Compile Include="BusinessRules\Northwind\CustomerCustomerDemoBusinessRules.cs" />
+    <Compile Include="BusinessRules\Northwind\CustomerDemographicsBusinessRules.cs" />
+    <Compile Include="BusinessRules\Northwind\CustomersBusinessRules.cs" />
+    <Compile Include="BusinessRules\Northwind\EmployeesBusinessRules.cs" />
+    <Compile Include="BusinessRules\Northwind\EmployeeTerritoriesBusinessRules.cs" />
+    <Compile Include="BusinessRules\Northwind\NorthwindBusinessRuleManager.cs" />
+    <Compile Include="BusinessRules\Northwind\OrderDetailsBusinessRules.cs" />
+    <Compile Include="BusinessRules\Northwind\OrdersBusinessRules.cs" />
+    <Compile Include="BusinessRules\Northwind\ProductsBusinessRules.cs" />
+    <Compile Include="BusinessRules\Northwind\RegionBusinessRules.cs" />
+    <Compile Include="BusinessRules\Northwind\ShippersBusinessRules.cs" />
+    <Compile Include="BusinessRules\Northwind\SuppliersBusinessRules.cs" />
+    <Compile Include="BusinessRules\Northwind\sysdiagramsBusinessRules.cs" />
+    <Compile Include="BusinessRules\Northwind\TerritoriesBusinessRules.cs" />
+    <Compile Include="Common\NorthwindServiceBase.cs" />
+    <Compile Include="EntityServices\Northwind\CategoriesService.cs" />
+    <Compile Include="EntityServices\Northwind\CustomerCustomerDemoService.cs" />
+    <Compile Include="EntityServices\Northwind\CustomerDemographicsService.cs" />
+    <Compile Include="EntityServices\Northwind\CustomersService.cs" />
+    <Compile Include="EntityServices\Northwind\EmployeesService.cs" />
+    <Compile Include="EntityServices\Northwind\EmployeeTerritoriesService.cs" />
+    <Compile Include="EntityServices\Northwind\OrderDetailsService.cs" />
+    <Compile Include="EntityServices\Northwind\OrdersService.cs" />
+    <Compile Include="EntityServices\Northwind\ProductsService.cs" />
+    <Compile Include="EntityServices\Northwind\RegionService.cs" />
+    <Compile Include="EntityServices\Northwind\ShippersService.cs" />
+    <Compile Include="EntityServices\Northwind\SuppliersService.cs" />
+    <Compile Include="EntityServices\Northwind\sysdiagramsService.cs" />
+    <Compile Include="EntityServices\Northwind\TerritoriesService.cs" />
+    <Compile Include="Helpers\ScopeHelper.cs" />
+    <Compile Include="Interfaces\IDatabaseServiceInternal.cs" />
+    <Compile Include="Interfaces\IScopeServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\ICategoriesServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\ICustomerCustomerDemoServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\ICustomerDemographicsServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\ICustomersServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\IEmployeesServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\IEmployeeTerritoriesServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\IOrderDetailsServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\IOrdersServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\IProductsServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\IRegionServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\IShippersServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\ISuppliersServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\IsysdiagramsServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\ITerritoriesServiceInternal.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\ICategoriesBusinessRules.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\ICustomerCustomerDemoBusinessRules.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\ICustomerDemographicsBusinessRules.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\ICustomersBusinessRules.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\IEmployeesBusinessRules.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\IEmployeeTerritoriesBusinessRules.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\INorthwindBusinessRuleManager.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\IOrderDetailsBusinessRules.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\IOrdersBusinessRules.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\IProductsBusinessRules.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\IRegionBusinessRules.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\IShippersBusinessRules.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\ISuppliersBusinessRules.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\IsysdiagramsBusinessRules.cs" />
+    <Compile Include="Interfaces\Northwind\BusinessRules\ITerritoriesBusinessRules.cs" />
+    <Compile Include="IoC\IocInitialize.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+</Project>

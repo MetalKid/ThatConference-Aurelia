@@ -1,0 +1,614 @@
+2015-07-25 14:25:31,675 [10] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:25:31,803 [10] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:25:31,805 [10] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:25:31,805 [10] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 14:25:58,309 [9] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:25:58,310 [9] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:25:58,311 [9] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:25:58,311 [9] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 14:26:28,291 [17] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:26:28,292 [17] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:26:28,293 [17] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:26:28,293 [17] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 14:26:38,879 [7] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:26:38,880 [7] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:26:38,880 [7] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:26:38,880 [7] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 14:38:27,096 [47] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:38:27,097 [47] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:38:27,098 [47] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:38:27,098 [47] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 14:38:32,699 [62] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:38:32,701 [62] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:38:32,701 [62] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:38:32,701 [62] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 14:40:29,284 [39] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:40:29,302 [39] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:40:29,303 [39] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:40:29,304 [39] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 14:43:04,088 [38] [ERROR] - SaveEntities
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The DELETE statement conflicted with the REFERENCE constraint "FK_Orders_Employees". The conflict occurred in database "NORTHWND", table "dbo.Orders", column 'EmployeeID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 300
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:43:04,173 [38] [ERROR] - Save
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The DELETE statement conflicted with the REFERENCE constraint "FK_Orders_Employees". The conflict occurred in database "NORTHWND", table "dbo.Orders", column 'EmployeeID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:43:04,174 [38] [ERROR] - 
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The DELETE statement conflicted with the REFERENCE constraint "FK_Orders_Employees". The conflict occurred in database "NORTHWND", table "dbo.Orders", column 'EmployeeID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 14:43:04,175 [38] [ERROR] - 
+ThatConference.Common.Exceptions.UserFriendlyException: An unexpected error has occurred.  Please try again.
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 263
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 15:27:08,524 [9] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:08,558 [9] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:08,561 [9] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:08,562 [9] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 15:27:11,782 [8] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:11,783 [8] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:11,783 [8] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:11,784 [8] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 15:27:13,707 [6] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:13,708 [6] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:13,709 [6] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:13,709 [6] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 15:27:15,260 [9] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:15,260 [9] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:15,261 [9] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:15,261 [9] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 15:27:16,528 [8] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:16,529 [8] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:16,529 [8] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:16,530 [8] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 15:27:18,418 [7] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:18,419 [7] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:18,419 [7] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:18,420 [7] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 15:27:23,235 [8] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:23,236 [8] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:23,237 [8] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:23,238 [8] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 15:27:25,254 [13] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:25,255 [13] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:25,255 [13] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:25,255 [13] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 15:27:33,709 [8] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:33,710 [8] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:33,710 [8] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:33,711 [8] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 15:27:47,661 [11] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:47,662 [11] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:47,662 [11] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:27:47,662 [11] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 15:28:25,354 [6] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:28:25,372 [6] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:28:25,373 [6] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:28:25,373 [6] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 15:28:31,962 [7] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:28:31,963 [7] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:28:31,963 [7] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:28:31,963 [7] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 15:46:12,599 [57] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:46:12,600 [57] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:46:12,600 [57] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 15:46:12,601 [57] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 16:17:15,947 [16] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 16:17:15,966 [16] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 16:17:15,968 [16] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 16:17:15,968 [16] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
+2015-07-25 16:19:50,020 [8] [ERROR] - SaveEntities
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Data.Common.RepositoryManagerBase`2.ValidateAndAttachEntities(IList`1 brokenRules, TContext ctx, IEnumerable`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 346
+   at ThatConference.Data.Common.RepositoryManagerBase`2.Save[TEntity](IList`1 brokenRules, ICollection`1 entities) in c:\thatConference\WebApi\Data\Common\RepositoryManagerBase.cs:line 299
+   at ThatConference.Northwind.Data.Repositories.Northwind.NorthwindRepositoryManager.ThatConference.Data.Common.Interfaces.IRepositoryManager.Save[TEntity](IList`1 , ICollection`1 )
+   at ThatConference.Services.Common.ServiceBase`2.<>c__DisplayClass30`1.<SaveEntities>b__2f(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 450
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 16:19:50,021 [8] [ERROR] - Save
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 16:19:50,022 [8] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Services.Common.ServiceBase`2.HandleResponse(IDataResult`1 response) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 561
+   at ThatConference.Services.Common.ServiceBase`2.SaveEntities[TEntity](ICollection`1 entities, Action`2 contextSpecificValidation) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 455
+   at ThatConference.Services.Common.ServiceBase`5.<>c__DisplayClass12`1.<Save>b__11(DataResult`1 result) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 829
+   at ThatConference.Services.Common.ServiceBase`2.Run[TResult](Action`1 code, Object[] parameters) in c:\thatConference\WebApi\Services\Common\ServiceBase.cs:line 100
+2015-07-25 16:19:50,022 [8] [ERROR] - 
+ThatConference.Common.Exceptions.BrokenRuleException: Exception of type 'ThatConference.Common.Exceptions.BrokenRuleException' was thrown.
+   at ThatConference.Common.Result.Verify(String concurrencyExceptionMessage) in c:\thatConference\WebApi\Common\Result.cs:line 201
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Verify(IResult result) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 257
+   at ThatConference.Northwind.Web.Mvc.Common.NorthwindApiControllerBase.Run[T](Func`1 code, Object[] parameters) in c:\thatConference\WebApi\Web.MVC\Common\NorthwindApiControllerBase.cs:line 192
